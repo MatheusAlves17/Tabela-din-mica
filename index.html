@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Dinâmica</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Controle de funcionários</h1>
+            <article>
+                <table id="tableFuncionarios">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                            <th>Cidade</th>
+                            <th colspan="2">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                    <tfoot>
+                        <tr id="input">
+                            <form id="form">
+                                <td><input data-index="new" class="insert" type="text" name="nome" id="nome"
+                                        placeholder="Ex: Leonardo" required></td>
+                                <td><input class="insert" type="text" name="idade" id="idade" placeholder="Ex: 35"
+                                        required></td>
+                                <td><input class="insert" type="text" name="cidade" id="cidade"
+                                        placeholder="Ex: São Paulo" required></td>
+                            </form>
+                            <td><a href="#"><abbr title="Desabilitado"><i class="fas fa-trash-alt"
+                                            style="color: #8a8888; cursor: default"></i></abbr></a></td>
+                            <td><a href="#"><abbr title="Desabilitado"><i class="fas fa-edit"
+                                            style="color: #8a8888; cursor: default;"></i></abbr></a></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+            <button id="salvar"><i class="fas fa-plus-circle"></i></button>
+        </section>
+    </main>
+    <footer>
+        <p>Evo Systems <i class="fa fa-copyright" aria-hidden="true"></i> 2021</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
